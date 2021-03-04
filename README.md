@@ -94,7 +94,7 @@ Your heap implementation will have one constructor that takes a comparator as it
 |`public int right(int index)`| Return the right child index. |
 |`public void swap(int i1, int i2)`| Takes the index of two entries and swaps them. |
 |`public void bubbleUp(int index)`| A recursive method that moves the entry at the specified `index` to a smaller index (up the tree) while maintaining the heap structure. In the case where the element is equal to the parent, you should **not** swap. |
-|`public void bubbleDown(int index)`| A recursive method that moves the entry at the specified `index` to a larger index (down the tree) while maintaining the heap structure. Swap with the smaller child. If both chilren are equal and swapping is needed, **swap with the left child**. In the case where the element is equal to the smaller child, you should **not** swap. |
+|`public void bubbleDown(int index)`| A recursive method that moves the entry at the specified `index` to a larger index (down the tree) while maintaining the heap structure. Swap with the <s>smaller child</s> child with higher priority. If both chilren are equal and swapping is needed, **swap with the left child**. In the case where the element is equal to the smaller child, you should **not** swap. |
 |`public boolean existsAndGreater(int index1, int index2)`| Returns true if the entry at index1 is greater than that at index2 (Note: Both entries at the specified indicies must exists for this to be true). Return false otherwise.  |
 |`public int size()`| Returns the number of elements in `entries`. |
 |`public String toString()`| Returns a string representation of the elements in `entries` (this method is helpful for debugging) |
